@@ -1,0 +1,19 @@
+{
+  "name": "imdb-e2e-test",
+  "version": "1.0.0",
+  "description": "Using Cypress as automation framework to complete QA Engineer Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibne86/IMDb-E2E-Test.git"
+  },
+  "author": "Ibne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibne86/IMDb-E2E-Test/issues"
+  },
+  "homepage": "https://github.com/ibne86/IMDb-E2E-Test#readme"
+}
