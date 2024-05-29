@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ibne86/IMDb-E2E-Test/issues"
   },
-  "homepage": "https://github.com/ibne86/IMDb-E2E-Test#readme"
+  "homepage": "https://github.com/ibne86/IMDb-E2E-Test#readme",
+  "devDependencies": {
+    "cypress": "^13.10.0"
+  }
 }
