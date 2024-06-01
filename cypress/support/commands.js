@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+// Launch website and decline cookies
+Cypress.Commands.add("visitWebsite", () => {
+    cy.visit("/");
+    cy.get('[data-testid="reject-button"]').click();
+  });
