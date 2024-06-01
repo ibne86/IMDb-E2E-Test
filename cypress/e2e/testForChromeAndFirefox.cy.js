@@ -1,5 +1,5 @@
-import home from "../pages/homePage";
-import profile from "../pages/profilePage";
+import home from "../pageObjects/homePage";
+import profile from "../pageObjects/profilePage";
 
 describe("Navigation Test", () => {
   it("Test works on Chrome and firefox ", () => {
