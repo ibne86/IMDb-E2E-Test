@@ -1,4 +1,4 @@
-class topboxofficePage {
+class topBoxOfficePage {
     elements = {
         secondMovie: () => cy.get(".ipc-title__text").contains('2. The Garfield Movie'),
     };
@@ -7,5 +7,5 @@ class topboxofficePage {
       this.elements.secondMovie().click();
     }
   }
-  const topboxoffice = new topboxofficePage();
-  export default topboxoffice;
+  const topBoxOffice = new topBoxOfficePage();
+  export default topBoxOffice;
