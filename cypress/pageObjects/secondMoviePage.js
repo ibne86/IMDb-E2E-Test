@@ -1,4 +1,4 @@
-class secondmoviePage {
+class secondMoviePage {
   elements = {
     imdbRatingButton: () =>
       cy
@@ -23,5 +23,5 @@ class secondmoviePage {
     this.elements.submitRating().click();
   }
 }
-const secondmovie = new secondmoviePage();
-export default secondmovie;
+const secondMovie = new secondMoviePage();
+export default secondMovie;
