@@ -11,5 +11,7 @@ module.exports = defineConfig({
       });
     },
     baseUrl: 'https://www.imdb.com',
+    viewportWidth: 1024,
+    viewportHeight: 660,
   },
 });
