@@ -6,7 +6,7 @@ import secondMovie from "../pageObjects/secondMoviePage";
 describe("Movie Rating Test", () => {
   it("Rate the second movie from the list", () => {
     cy.visitWebsite();
-    home.expandMenuTab();
+    cy.expandMenuTab();
     menu.clicktopBoxOffice();
     topBoxOffice.clicksecondMovie();
     secondMovie.clickimdbRatingButton();
