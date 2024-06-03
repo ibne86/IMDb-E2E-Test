@@ -1,4 +1,3 @@
-import home from "../pageObjects/homePage";
 import menu from "../pageObjects/menuPage";
 import topBoxOffice from "../pageObjects/topboxofficePage";
 import secondMovie from "../pageObjects/secondMoviePage";
