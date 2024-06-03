@@ -1,6 +1,6 @@
 class menuPage {
     elements = {
-        topBoxOffice: () => cy.get(".ipc-list-item__text").contains('Top Box Office'),
+        topBoxOffice: () => cy.get('[data-testid="list-container"] ul > a').eq(4).find('span'),
     };
   
     clicktopBoxOffice() {
@@ -9,4 +9,3 @@ class menuPage {
   }
   const menu = new menuPage();
   export default menu;
-  

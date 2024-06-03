@@ -1,8 +1,6 @@
 class secondMoviePage {
   elements = {
-    imdbRatingButton: () =>
-      cy
-        .get('[data-testid="hero-rating-bar__aggregate-rating__score"] span').eq(0),
+    imdbRatingButton: () => cy.get('[data-testid="hero-rating-bar__aggregate-rating__score"] span').eq(0),
     ratingButton: () => cy.get('[data-testid="rating-button__user-rating__unrated"]'),
     setRating: () => cy.get(".ipc-starbar__rating button"),
     submitRating: () => cy.get(".ipc-rating-prompt__rating-container > .ipc-btn"),

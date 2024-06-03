@@ -1,6 +1,6 @@
 class topBoxOfficePage {
     elements = {
-        secondMovie: () => cy.get(".ipc-title__text").contains('2. The Garfield Movie'),
+        secondMovie: () => cy.get('div[data-testid="chart-layout-main-column"] h3').eq(1),
     };
   
     clicksecondMovie() {

@@ -1,7 +1,8 @@
 class profilePage {
     elements = {
-      upComingTab: () => cy.get("li.ipc-inline-list__item").contains("Upcoming"),
-      movieListLonglegs: () => cy.get("a.ipc-metadata-list-summary-item__t").contains("Longlegs"),
+      upComingTab: () => cy.get('label[data-testid="accordion-item-actor-upcoming-projects"] li').eq(0),
+      movieListLonglegs: () => cy.get('[data-testid="accordion-item-content-container"] ul li').contains("Longlegs"),
+
     };
   
     clickupcomingTab() {
