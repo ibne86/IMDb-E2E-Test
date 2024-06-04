@@ -4,11 +4,11 @@ class homePage {
     searchResult: () => cy.get(".searchResult__constTitle").contains("Nicolas Cage"),
   };
 
-  enterSearchText(query) {
+  enter_SearchText(query) {
     this.elements.searchBox().type(query);
   }
 
-  clickSerachResult() {
+  click_SerachResult() {
     this.elements.searchResult().click();
   }
 }

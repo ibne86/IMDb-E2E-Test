@@ -5,16 +5,16 @@ class profilePage {
 
     };
   
-    clickupcomingTab() {
+    click_upcomingTab() {
       this.elements.upComingTab().click();
     }
-  
-    clickupcomingTab() {
-      this.elements.upComingTab().click();
-    }
-  
-    clickFirstCompletedMovie() {
+
+    click_FirstCompletedMovie() {
       this.elements.movieListLonglegs().click();
+    }
+
+    verify_MovieTitle() {
+    this.elements.movieTitle();
     }
   }
   const profile = new profilePage();

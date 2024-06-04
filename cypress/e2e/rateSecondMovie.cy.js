@@ -6,12 +6,12 @@ describe("Movie Rating Test", () => {
   it("Rate the second movie from the list", () => {
     cy.visitWebsite();
     cy.expandMenuTab();
-    menu.clicktopBoxOffice();
-    topBoxOffice.clicksecondMovie();
-    secondMovie.clickimdbRatingButton();
-    secondMovie.clickratingButton();
-    secondMovie.clicksettRating();
-    secondMovie.clicksubmitRating();
+    menu.click_topBoxOffice();
+    topBoxOffice.click_secondMovie();
+    secondMovie.click_imdbRatingButton();
+    secondMovie.click_ratingButton();
+    secondMovie.click_settRating();
+    secondMovie.click_submitRating();
     cy.get('#signin-options').contains('h1', 'Sign in')
   });
 });

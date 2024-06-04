@@ -6,7 +6,7 @@ class top250TvShowsPage {
         .contains("1. Breaking Bad"),
   };
 
-  clicktop250TVShows() {
+  click_top250TVShows() {
     this.elements.top250TVShows().click();
   }
 }
