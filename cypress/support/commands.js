@@ -30,3 +30,7 @@ Cypress.Commands.add("visitWebsite", () => {
     cy.visit("/");
     cy.get('[data-testid="reject-button"]').click();
   });
+
+  Cypress.Commands.add("expandMenuTab", () => {
+    cy.get('#imdbHeader-navDrawerOpen > span').click();
+  });
