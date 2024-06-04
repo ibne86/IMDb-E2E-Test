@@ -3,7 +3,7 @@ class topBoxOfficePage {
         secondMovie: () => cy.get('div[data-testid="chart-layout-main-column"] h3').eq(1),
     };
   
-    clicksecondMovie() {
+    click_secondMovie() {
       this.elements.secondMovie().click();
     }
   }

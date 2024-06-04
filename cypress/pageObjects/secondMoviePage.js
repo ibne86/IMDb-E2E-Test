@@ -6,18 +6,18 @@ class secondMoviePage {
     submitRating: () => cy.get(".ipc-rating-prompt__rating-container > .ipc-btn"),
   };
 
-  clickimdbRatingButton() {
+  click_imdbRatingButton() {
     this.elements.imdbRatingButton().click();
   }
-  clickratingButton() {
+  click_ratingButton() {
     this.elements.ratingButton().click();
   }
-  clicksettRating() {
+  click_settRating() {
     this.elements.setRating().then(($button) => {
       $button[4].click();
     });
   }
-  clicksubmitRating() {
+  click_submitRating() {
     this.elements.submitRating().click();
   }
 }

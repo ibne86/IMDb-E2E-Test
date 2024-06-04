@@ -4,11 +4,11 @@ class menuPage {
         top250TVShows: () => cy.get('[data-testid="grouped-link-category"] a ').find('span').contains("Top 250 TV Shows"),
     };
   
-    clicktopBoxOffice() {
+    click_topBoxOffice() {
       this.elements.topBoxOffice().click();
     }
 
-    clicktop250TVShows() {
+    click_top250TVShows() {
       this.elements.top250TVShows().click();
     }
   }

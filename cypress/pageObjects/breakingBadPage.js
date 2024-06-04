@@ -3,7 +3,7 @@ class breakingBadPage {
       photos: () => cy.get('[data-testid="photos-title"] h3'),
     };
   
-    clickphotos() {
+    click_photos() {
       this.elements.photos().click();
     }
   }

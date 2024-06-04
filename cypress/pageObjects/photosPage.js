@@ -8,25 +8,25 @@ class photosPage {
       Photo_DannyTrejo: () => cy.get('[data-testid="media-sheet"] > div > div').eq(1).find('span').eq(1),
     };
   
-    clickgallary() {
+    click_gallary() {
       this.elements.gallary().click();
     }
 
-    clickfilterIcon() {
+    click_filterIcon() {
         this.elements.filterIcon().click();
     }
 
-    clickselectActorFromDropDown() {
+    click_selectActorFromDropDown() {
         this.elements.selectActorFromDropDown().select('nm0001803');
     }
-    clickcloseFilterModal() {
+    click_closeFilterModal() {
         this.elements.closeFilterModal().click();
     }
 
-    clickphotoGallery_DannyTrejo() {
+    click_photoGallery_DannyTrejo() {
         this.elements.photoGallery_DannyTrejo().click();
     }
-    verifyPhoto_DannyTrejo() {
+    verify_Photo_DannyTrejo() {
         this.elements.Photo_DannyTrejo().should("have.text","Danny Trejo");
     }
   }
