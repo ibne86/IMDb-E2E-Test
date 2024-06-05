@@ -2,12 +2,21 @@ import home from "../pageObjects/homePage";
 import profile from "../pageObjects/profilePage";
 
 describe("Navigation Test", () => {
-  it("Test works on Chrome and firefox", () => {
-    cy.visitWebsite();
-    home.enter_SearchText("Nicolas Cage");
-    home.click_SerachResult();
-    profile.click_upcomingTab();
-    profile.click_FirstCompletedMovie();
-    cy.get('span[data-testid="hero__primary-text"]').should("have.text","Longlegs");
+  it("Test runs on Chrome and firefox", () => {
+    cy.fixture("searchText").then((searchData) => {
+      // Access data from fixtures
+      const searchText = searchData.name;
+
+      cy.fixture("movieTitle").then((movieTitleData) => {
+        const movieTitle = movieTitleData.title;
+
+        cy.visitWebsite();
+        home.enter_SearchText(searchText);
+        home.click_SerachResult();
+        profile.click_upcomingTab();
+        profile.click_FirstCompletedMovie();
+        profile.verify_movieTitle(movieTitle);
+      });
+    });
   });
 });
