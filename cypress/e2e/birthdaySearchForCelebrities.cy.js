@@ -3,7 +3,7 @@ import searchResult from "../pageObjects/searchResultPage";
 import thirdCelebrity from "../pageObjects/thirdCelebrityPage";
 import { getYesterdaysDate } from "../support/dateUtils";
 
-describe("Birthday SearchFor Celebrities", () => {
+describe("Birthday Search For Celebrities", () => {
   it("Search for celebrities born yesterday and take screechot of the third celebritie", () => {
     cy.visitWebsite();
     cy.expandMenuTab();
