@@ -19,6 +19,7 @@ describe("search for celebrities born exactly 40 years ago", () => {
     searchResult.click_searchResultButton();
 
     searchResult.checkLink_firstCelebrityDescription();
-    searchResult.take_screenshot();
+    cy.compareSnapshot('first-Celebrity-Description');
+
   });
 });

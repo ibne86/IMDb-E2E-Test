@@ -1,6 +1,5 @@
 import menu from "../pageObjects/menuPage";
 import searchResult from "../pageObjects/searchResultPage";
-import thirdCelebrity from "../pageObjects/thirdCelebrityPage";
 import { getYesterdaysDate } from "../support/dateUtils";
 
 describe("Birthday Search For Celebrities", () => {
@@ -16,6 +15,6 @@ describe("Birthday Search For Celebrities", () => {
     searchResult.set_birthdayInputField(yesterdaysDate);
     searchResult.click_searchResultButton();
     searchResult.click_thirdcelebrity();
-    thirdCelebrity.take_screenshot();
+    cy.compareSnapshot('third-celebrity');
   });
 });
