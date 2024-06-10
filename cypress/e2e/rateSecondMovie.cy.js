@@ -12,6 +12,6 @@ describe("Movie Rating Test", () => {
     secondMovie.click_ratingButton();
     secondMovie.click_settRating();
     secondMovie.click_submitRating();
-    cy.get('#signin-options').contains('h1', 'Sign in')
+    secondMovie.get_header().contains('h1', 'Sign in');
   });
 });

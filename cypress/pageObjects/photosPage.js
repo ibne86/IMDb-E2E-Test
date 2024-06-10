@@ -5,7 +5,7 @@ class photosPage {
       selectActorFromDropDown: () => cy.get('#Person-filter-select-dropdown'),
       closeFilterModal: () => cy.get('[data-testid="promptable__x"] > .ipc-icon-button'),
       photoGallery_DannyTrejo: () => cy.get("#rm123229952-img-1"),
-      Photo_DannyTrejo: () => cy.get('[data-testid="media-sheet"] > div > div').eq(1).find('span').eq(1),
+      dannyTrejoText: () => cy.get('[data-testid="media-sheet"] > div > div').eq(1).find('span').eq(1),
     };
   
     click_gallary() {
@@ -26,8 +26,8 @@ class photosPage {
     click_photoGallery_DannyTrejo() {
         this.elements.photoGallery_DannyTrejo().click();
     }
-    verify_Photo_DannyTrejo() {
-        this.elements.Photo_DannyTrejo().should("have.text","Danny Trejo");
+    get_dannyTrejoText() {
+        return this.elements.dannyTrejoText();
     }
   }
   const photos = new photosPage();
