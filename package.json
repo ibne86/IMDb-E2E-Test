@@ -22,5 +22,8 @@
   "homepage": "https://github.com/ibne86/IMDb-E2E-Test#readme",
   "devDependencies": {
     "cypress": "^13.10.0"
+  },
+  "dependencies": {
+    "cypress-visual-regression": "^5.0.2"
   }
 }
