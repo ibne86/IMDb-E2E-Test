@@ -4,6 +4,7 @@ class secondMoviePage {
     ratingButton: () => cy.get('[data-testid="rating-button__user-rating__unrated"]'),
     setRating: () => cy.get(".ipc-starbar__rating button"),
     submitRating: () => cy.get(".ipc-rating-prompt__rating-container > .ipc-btn"),
+    header: () => cy.get("#signin-options"),
   };
 
   click_imdbRatingButton() {
@@ -19,6 +20,9 @@ class secondMoviePage {
   }
   click_submitRating() {
     this.elements.submitRating().click();
+  }
+  get_header() {
+    return this.elements.header();
   }
 }
 const secondMovie = new secondMoviePage();

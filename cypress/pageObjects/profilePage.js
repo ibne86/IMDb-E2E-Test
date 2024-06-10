@@ -13,8 +13,8 @@ class profilePage {
     this.elements.movieListLonglegs().click();
   }
 
-  verify_movieTitle(expectedTitle) {
-  this.elements.movieTitle().should('have.text', expectedTitle);
+  get_movieTitle() {
+  return this.elements.movieTitle();
   }
 }
 const profile = new profilePage();
