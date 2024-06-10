@@ -15,6 +15,6 @@ describe('Photo Interaction Test', () => {
     photos.click_selectActorFromDropDown();
     photos.click_closeFilterModal();
     photos.click_photoGallery_DannyTrejo();
-    photos.verify_Photo_DannyTrejo();
+    photos.get_dannyTrejoText().should("have.text", "Danny Trejo");    
   });
 });
