@@ -24,3 +24,8 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     // failing the test
     return false
   })
+
+  const { addCompareSnapshotCommand } = require('cypress-visual-regression/dist/command')
+  addCompareSnapshotCommand({
+    capture: 'fullPage'
+  })
