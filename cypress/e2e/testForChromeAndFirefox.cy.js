@@ -15,7 +15,7 @@ describe("Navigation Test", () => {
         home.click_SerachResult();
         profile.click_upcomingTab();
         profile.click_FirstCompletedMovie();
-        profile.verify_movieTitle(movieTitle);
+        profile.get_movieTitle().should('have.text', movieTitle);
       });
     });
   });
